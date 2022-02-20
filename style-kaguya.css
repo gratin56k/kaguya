@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  padding-top: 1em;
+  text-align: center;
+  background-color: rgb(88, 88, 88);
+}
+
+.header-top {
+  line-height: 80px;
+  color: #ff6767;
+}
+
+.header-bottom {
+  background-color: rgb(247, 236, 84);
+}
+
+.list {
+  padding: 1em 0;
+  text-align: center;
+}
+
+header li.list-item {
+  margin: 0.3em 1em;
+  list-style: none;
+  display: inline-block;
+}
+
+.main-visual {
+  height: 400px;
+  width: 100%;
+  background-image: url(img-kaguya/mv1.png);
+  background-size: cover;
+  background-position: 100% 4%;
+  background-color: pink;  /* remove */
+}
+
+.main-visual-coment {
+  height: 100%;
+  width: 40%;
+  padding-top: 140px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main-visual-text {
+  color: #fff;
+}
+
+.main-visual-name {
+  margin-top: 2em;
+  color: #fff;
+  }
+
+main {
+  width: 1200px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+}
+
+main.content {
+  width: 64%;
+  margin-right: 3%;
+}
+
+.content-heading,
+.common-heading   {
+  padding-bottom: 0.5em;
+  text-align: center;
+  line-height: 0.6;
+  border-bottom: 8px solid #f7f7f7;
+}
+
+.content-box {
+  margin: 2em 2em 0 0;
+}
+
+.content-item {
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #f7f7f7;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.content-image {
+  height: 180px;
+  width: 260px;
+  background-color: greenyellow;  /* remove */
+}
+
+.content-text {
+  padding: 1em 0 0 2em;
+}
+.content-text-heading{
+  padding-bottom: 0.8em;
+}
+
+.content-date {
+  font-size: 12px;
+  display: inline-block;
+}
+
+.categry {
+  padding: 5px;
+  font-size: 15px;
+  color: #fff;
+  background-color: #acabab;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.pagination {
+  text-align: center;
+  padding-top: 3em;
+}
+
+.pagination p {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 0.3em;
+  color: #fff;
+  background-color: #acabab;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.backButton {
+  width: 7em;
+  height: 30px;
+  line-height: 30px;
+  margin: 1em auto;
+  color: #fff;
+  background-color: #acabab;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar {
+  margin-left: 2em;
+  width: 33%;
+}
+
+.sidebar-contents {
+  padding: 50px 0;
+}
+
+.categories-text {
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #f7f7f7;
+}
+
+.categories-text:last-child {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.photo .sidebar-contents {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photo-box {
+  width: 110px;
+  padding-top: 110px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+.photo-box:nth-child(1) {
+  background-image: url(img-kaguya/Photo1.jpg);
+  margin-right: 10px;
+  background-color: red;
+}
+
+.photo-box:nth-child(2) {
+  background-image: url(img-kaguya/Photo2.jpg);
+  margin-right: 10px;
+  background-color: blue;
+}
+
+.photo-box:nth-child(3) {
+  background-image: url(img-kaguya/Photo3.jpg);
+  background-color: green;
+}
+
+.photo-box:nth-child(4) {
+  background-image: url(img-kaguya/Photo4.jpg);
+  margin-right: 10px;
+  background-color: yellow;
+}
+
+.photo-box:nth-child(5) {
+  background-image: url(img-kaguya/Photo5.jpg);
+  margin-right: 10px;
+  background-color: orange;
+}
+
+.photo-box:nth-child(6) {
+  background-image: url(img-kaguya/Photo6.jpg);
+  background-color: purple;
+}
+
+.photo-box span {
+  width: 20px;
+  text-align: center;
+  background-color: #acabab;
+  display: inline-block;
+}
+
+
+.footer {
+  height: 120px;
+  width: 100%;
+  text-align: center;
+  line-height: 120px;
+  background-color: #848282;
+}
+
+.footer-text {
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+
+  .nav-list {
+    width: 100%;
+  }
+
+  .nav-list-item {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+
+  .main-visual-content {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+    display: block;
+  }
+
+  .content {
+    width: 100%;
+    margin: 0;
+  }
+
+  .content-box {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .content-image {
+    width: 49%;
+  }
+
+  .content-text {
+    width: 49%;
+    padding-top: 5px;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .photo-box {
+    width: 48%;
+    padding-top: 48%;
+  }
+
+  .photo-box:nth-child(odd) {
+    margin-right: 2%;
+  }
+
+  .pagination {
+    margin-bottom: 50px;
+  }
+}
